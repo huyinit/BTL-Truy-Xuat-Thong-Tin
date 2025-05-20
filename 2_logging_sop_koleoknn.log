@@ -1,0 +1,60 @@
+2025-05-08 13:39:42 - ==================== training arguments ====================
+2025-05-08 13:39:42 - model: deit_small_distilled_patch16_224
+2025-05-08 13:39:42 - input_size: 224
+2025-05-08 13:39:42 - drop: 0.0
+2025-05-08 13:39:42 - drop_path: 0.1
+2025-05-08 13:39:42 - max_iter: 2000
+2025-05-08 13:39:42 - batch_size: 64
+2025-05-08 13:39:42 - lr: 3e-05
+2025-05-08 13:39:42 - opt: adamw
+2025-05-08 13:39:42 - opt_eps: 1e-08
+2025-05-08 13:39:42 - opt_betas: None
+2025-05-08 13:39:42 - clip_grad: None
+2025-05-08 13:39:42 - momentum: 0.9
+2025-05-08 13:39:42 - weight_decay: 0.0005
+2025-05-08 13:39:42 - dataset: sop
+2025-05-08 13:39:42 - data_path: Stanford_Online_Products
+2025-05-08 13:39:42 - m: 2
+2025-05-08 13:39:42 - rank: [1, 10, 100, 1000]
+2025-05-08 13:39:42 - num_workers: 16
+2025-05-08 13:39:42 - pin_mem: True
+2025-05-08 13:39:42 - lambda_reg: 0.7
+2025-05-08 13:39:42 - margin: 0.5
+2025-05-08 13:39:42 - memory_ratio: 1.0
+2025-05-08 13:39:42 - encoder_momentum: None
+2025-05-08 13:39:42 - logging_freq: 100
+2025-05-08 13:39:42 - output_dir: ./outputs\sop
+2025-05-08 13:39:42 - log_dir: ./logs\sop
+2025-05-08 13:39:42 - device: cuda:0
+2025-05-08 13:39:42 - seed: 0
+2025-05-08 13:39:42 - ============================================================
+2025-05-08 13:39:42 - Number of training examples: 59551
+2025-05-08 13:39:42 - Number of query examples: 60502
+2025-05-08 13:39:42 - Loading pretrained weights from url (https://dl.fbaipublicfiles.com/deit/deit_small_distilled_patch16_224-649709d9.pth)
+2025-05-08 13:39:42 - Number of params: 21.67 M
+2025-05-08 13:41:07 - Iteration [  100/2,000] contrastive: 0.9860  regularization : -0.0909(x 0.7) total_loss: 0.9223  
+2025-05-08 13:41:26 - Iteration [  200/2,000] contrastive: 0.8654  regularization : -0.0577(x 0.7) total_loss: 0.8249  
+2025-05-08 13:41:44 - Iteration [  300/2,000] contrastive: 0.8530  regularization : -0.0723(x 0.7) total_loss: 0.8024  
+2025-05-08 13:42:02 - Iteration [  400/2,000] contrastive: 0.8598  regularization : -0.0821(x 0.7) total_loss: 0.8023  
+2025-05-08 13:42:21 - Iteration [  500/2,000] contrastive: 1.0016  regularization : -0.0777(x 0.7) total_loss: 0.9472  
+2025-05-08 13:42:39 - Iteration [  600/2,000] contrastive: 0.8092  regularization : -0.0752(x 0.7) total_loss: 0.7566  
+2025-05-08 13:42:58 - Iteration [  700/2,000] contrastive: 0.8671  regularization : -0.0591(x 0.7) total_loss: 0.8257  
+2025-05-08 13:43:16 - Iteration [  800/2,000] contrastive: 0.7949  regularization : -0.0724(x 0.7) total_loss: 0.7441  
+2025-05-08 13:43:35 - Iteration [  900/2,000] contrastive: 0.8547  regularization : -0.0831(x 0.7) total_loss: 0.7965  
+2025-05-08 13:43:54 - Iteration [1,000/2,000] contrastive: 0.8129  regularization : -0.0596(x 0.7) total_loss: 0.7712  
+2025-05-08 13:44:12 - Iteration [1,100/2,000] contrastive: 0.8430  regularization : -0.0729(x 0.7) total_loss: 0.7919  
+2025-05-08 13:44:31 - Iteration [1,200/2,000] contrastive: 0.8434  regularization : -0.0708(x 0.7) total_loss: 0.7938  
+2025-05-08 13:44:50 - Iteration [1,300/2,000] contrastive: 0.8114  regularization : -0.0761(x 0.7) total_loss: 0.7581  
+2025-05-08 13:45:09 - Iteration [1,400/2,000] contrastive: 0.7933  regularization : -0.0538(x 0.7) total_loss: 0.7556  
+2025-05-08 13:45:27 - Iteration [1,500/2,000] contrastive: 0.8835  regularization : -0.0779(x 0.7) total_loss: 0.8290  
+2025-05-08 13:46:53 - Iteration [1,600/2,000] contrastive: 0.7630  regularization : -0.0691(x 0.7) total_loss: 0.7147  
+2025-05-08 13:47:11 - Iteration [1,700/2,000] contrastive: 0.7959  regularization : -0.0678(x 0.7) total_loss: 0.7484  
+2025-05-08 13:47:30 - Iteration [1,800/2,000] contrastive: 0.7950  regularization : -0.0523(x 0.7) total_loss: 0.7584  
+2025-05-08 13:47:49 - Iteration [1,900/2,000] contrastive: 0.7559  regularization : -0.0575(x 0.7) total_loss: 0.7157  
+2025-05-08 13:48:07 - Iteration [2,000/2,000] contrastive: 0.7564  regularization : -0.0685(x 0.7) total_loss: 0.7085  
+2025-05-08 13:48:09 - Start evaluation job
+2025-05-08 13:50:27 - Recall@1 : 78.49%
+2025-05-08 13:50:27 - Recall@10 : 90.42%
+2025-05-08 13:50:27 - Recall@100 : 95.80%
+2025-05-08 13:50:27 - Recall@1000 : 98.59%
+2025-05-08 13:50:27 - Training time 0:10:44

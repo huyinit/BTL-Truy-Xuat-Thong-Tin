@@ -1,0 +1,44 @@
+torch==2.0.1+cu117
+torchvision==0.15.2+cu117
+numpy==1.22.4
+Downloading: "https://dl.fbaipublicfiles.com/deit/deit_small_distilled_patch16_224-649709d9.pth" to C:\Users\huyre/.cache\torch\hub\checkpoints\deit_small_distilled_patch16_224-649709d9.pth
+2025-04-25 15:05:48 - Loading pretrained weights from url (https://dl.fbaipublicfiles.com/deit/deit_small_distilled_patch16_224-649709d9.pth)
+
+python main.py --model deit_small_distilled_patch16_224 --max-iter 2000 --dataset cub200 --data-path CUB_200_2011\CUB_200_2011 --rank 1 2 4 8
+
+# Stanford Online Products
+python main.py   --model deit_small_distilled_patch16_224 --max-iter 2000   --dataset sop   --m 2  --data-path Stanford_Online_Products  --rank 1 10 100 1000 
+
+# absl-py==1.1.0
+# cachetools==5.2.0
+# certifi==2022.12.7
+# charset-normalizer==2.0.12
+# google-auth==2.6.6
+# google-auth-oauthlib==0.4.6
+# grpcio==1.53.0
+# idna==3.3
+# importlib-metadata==4.11.4
+# joblib==1.1.1
+# Markdown==3.3.7
+# oauthlib==3.2.2
+# Pillow==9.3.0
+# protobuf==3.20.2
+# pyasn1==0.4.8
+# pyasn1-modules==0.2.8
+# pytorch-metric-learning==1.3.2
+# requests==2.31.0
+# requests-oauthlib==1.3.1
+# rsa==4.8
+# scikit-learn==1.0.2
+# scipy==1.7.3
+# six==1.16.0
+# tensorboard==2.9.0
+# tensorboard-data-server==0.6.1
+# tensorboard-plugin-wit==1.8.1
+# threadpoolctl==3.1.0
+# timm==0.5.4
+# tqdm==4.64.0
+# typing_extensions==4.2.0
+# urllib3==1.26.9
+# Werkzeug==2.2.3
+# zipp==3.8.0
